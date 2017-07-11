@@ -1,0 +1,17 @@
+{{#if errors}}
+
+  {{#each errors}}
+    <span>{{msg}}</span><br>
+  {{/each}}
+
+{{/if}}
+
+<form action="/home" method="post">
+  <label>Username:</label><br>
+  <input type="text" name="username" value=""><br><br>
+  <label>Password:</label><br>
+  <input type="password" name="password" value=""><br><br>
+  <label>Password again</label><br>
+  <input type="password" name="password_again" value=""><br><br>
+  <input type="submit" name="" value="Submit">
+</form>

@@ -1,0 +1,15 @@
+{{#if errors}}
+
+  {{#each errors}}
+    <span>{{ this }}</span><br>
+  {{/each}}
+
+{{/if}}
+
+<form action="/login" method="post">
+  <label>Username:</label><br>
+  <input type="text" name="l_username" value=""><br><br>
+  <label>Password:</label><br>
+  <input type="password" name="l_password" value=""><br><br>
+  <input type="submit" name="" value="Submit">
+</form>
